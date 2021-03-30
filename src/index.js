@@ -14,8 +14,8 @@ class App extends React.Component {
         );
     }    
 
-    // Require render by React
-    render() {   
+    //helper function
+    renderContent() {
         if (this.state.errorMessage && !this.state.lat){
             return <div> Error: {this.state.errorMessage}</div>
         }
@@ -23,8 +23,16 @@ class App extends React.Component {
             // take lat component as a state and pass down child SeasonDisplay
             return <SeasonDisplay lat={this.state.lat} />
         }
-
         return <Spinner message="Please accept location request" />;
+    };
+
+    // Require render by React
+    render() {   
+        return (
+            <div className="border red">
+                {this.renderContent()}
+            </div>
+        );
     }
 }
 
