@@ -1,7 +1,6 @@
 import './SeasonDisplay.css';
 import React from 'react';
 
-
 // create configuration object to clean up the ternary expr
 const seasonConfig = {
     summer: {
