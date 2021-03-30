@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import SeasonDisplay from './SeasonDisplay';
 
 class App extends React.Component {
     // 2nd method of initializing state, same as constructor function and this.state
@@ -18,7 +19,8 @@ class App extends React.Component {
             return <div> Error: {this.state.errorMessage}</div>
         }
         if (!this.state.errorMessage && this.state.lat) {
-            return <div>Latitude: {this.state.lat}</div>
+            // take lat component as a state and pass down child SeasonDisplay
+            return <SeasonDisplay lat={this.state.lat} />
         }
 
         return <div>Loading!</div>
