@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad0959e3-340f-462e-963d-25e2a37bbace/deploy-status)](https://app.netlify.com/sites/hungry-cray-6796c4/deploys)
+
 ## Demo (Displays text and background image base on user's Geo location)  
 https://hungry-cray-6796c4.netlify.app/
 
